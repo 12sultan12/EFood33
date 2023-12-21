@@ -1,0 +1,262 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Rubik, sans-serif;
+}
+
+body {
+  background: linear-gradient(
+    114deg,
+    rgba(239, 239, 239, 0) -2.01%,
+    rgba(239, 239, 239, 0.2) 103.74%
+  );
+  backdrop-filter: blur(388.5px);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  outline: none;
+}
+
+button {
+  border: none;
+  outline: none;
+}
+
+/* HEADER */
+
+header {
+  padding: 54px 0;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header h1 {
+  color: #363853;
+  font-size: 33px;
+  font-weight: 500;
+  letter-spacing: 1.65px;
+}
+
+.header h1 span {
+  color: #ff6838;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+nav a {
+  color: #363853;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+nav a:focus {
+  color: #ff6838;
+  text-shadow: -4px 5px 1px rgba(0, 0, 0, 0.38);
+  animation: hover 2s;
+}
+
+@keyframes hover {
+  from {
+    font-size: normal;
+  }
+  to {
+    font-size: 25px;
+  }
+}
+
+.header-btns {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+.header-btns button {
+  border-radius: 5px;
+  background: var(--Secondary, #ff7a50);
+  box-shadow: 0px 22px 40px 0px rgba(255, 104, 56, 0.19);
+  padding: 14px 27px;
+  color: var(--main-back-white, #fff);
+  font-size: 18px;
+  font-weight: 400;
+  border: none;
+  outline: none;
+}
+
+.header-btns button:hover {
+  background: none;
+  border: 2px solid #ff7a50;
+  color: #ff7a50;
+}
+
+/* HEADER */
+
+/* HERO - TEXT */
+
+#hero {
+  padding: 50px 0 94px 0;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hero-text h1 {
+  color: var(--Primary, #363853);
+  font-size: 66px;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.hero-text h1 span {
+  color: var(--Secondary, #ff7a50);
+}
+
+.hero-text p {
+  color: var(--Primary, #363853);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  text-transform: capitalize;
+  margin: 23px 0 44px 0;
+}
+
+.hero-text-btns {
+  display: flex;
+  gap: 30px;
+}
+
+.hero-text-btns button:first-child {
+  border-radius: 5px;
+  background: var(--Secondary, #ff7a50);
+  box-shadow: 0px 22px 40px 0px rgba(255, 104, 56, 0.19);
+  padding: 13px 21px;
+  color: var(--main-back-white, #fff);
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.hero-text-btns button:last-child {
+  color: var(--Primary, #363853);
+  font-size: 20px;
+  font-weight: 400;
+  text-decoration-line: underline;
+  background: none;
+}
+
+/* HERO - TEXT */
+
+/* HERO - IMG */
+
+.hero-img {
+  position: relative;
+}
+
+.hero-img .one {
+  position: absolute;
+  top: 251px;
+  left: 500px;
+}
+
+.hero-img .two {
+  position: absolute;
+  top: 117px;
+  left: 102px;
+}
+
+.hero-img .three {
+  position: absolute;
+  top: 48px;
+  right: 36px;
+  z-index: -1;
+}
+
+.hero-img .four {
+  position: absolute;
+  top: 8px;
+  left: 222px;
+}
+
+.hero-img .five {
+  position: absolute;
+  top: 5px;
+  right: 75px;
+}
+
+.mainImg {
+  width: 685px;
+  height: 680px;
+}
+
+/* HERO - IMG */
+
+/* POPULAR */
+
+.popular h1 {
+  color: var(--Primary, #363853);
+  font-size: 36px;
+  font-weight: 500;
+  text-transform: capitalize;
+  text-align: center;
+  margin-bottom: 55px;
+  span {
+    color: var(--Secondary, #ff7a50);
+  }
+}
+
+.popular-btns {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.popular-btns .svg path {
+  fill: #363853;
+}
+
+.popular-btns button {
+  border-radius: 8px;
+  background: #fff;
+  width: 210px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.popular-btns button:hover {
+  color: #fff;
+  background-color: #ff6838;
+  svg path {
+    fill: #fff;
+  }
+}
+
+/* POPULAR */
